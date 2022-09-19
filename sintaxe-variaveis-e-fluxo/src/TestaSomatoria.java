@@ -7,9 +7,9 @@ public class TestaSomatoria {
 		
 		while(contador <= 10) {
 			
-			total = total + contador;	
-			total += contador;
-			
+			total = total + contador;	// Pode ser assim... 
+			total += contador;  // Esse é o modo mais utilizado no Java.
+			 
 			System.out.println(total);
 			contador++;
 		}	
