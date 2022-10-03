@@ -4,12 +4,16 @@
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total; // Static quer dizer: "Da classe".
 	
 	
 	public Conta (int agencia, int numero) {
+		Conta.total++;
+		//System.out.println("O total de contas é " + Conta.class);
+		
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println("Estou criando uma conta " + this.numero);
+		//System.out.println("Estou criando uma conta " + this.numero);
 	}
 	
 	public void deposita(double valor) {
@@ -59,6 +63,10 @@
 	
 	public Cliente getTitular() {
 		return titular;
+	}
+	
+	public static int getTotal() {
+		return Conta.total;
 	}
 }
 

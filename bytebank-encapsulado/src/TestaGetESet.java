@@ -2,7 +2,7 @@
 public class TestaGetESet {
 	
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(0, 0);
 		//conta.numero = 1337; ==> Assim não funciona pois "numero" é privado.
 		conta.setNumero(1337);
 		System.out.println(conta.getNumero());
