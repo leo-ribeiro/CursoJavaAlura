@@ -46,6 +46,10 @@
 	}
 	
 	public void setNumero(int numero) {
+		if(numero <=0) {
+			System.out.println("Não pode valor menor igual a 0");
+			return;
+		}
 		this.numero = numero;
 	}
 	
