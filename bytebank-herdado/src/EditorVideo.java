@@ -1,5 +1,5 @@
 // Gerente é um funcionário, Gerente herda a classe Funcionario
-public class Gerente extends Funcionario{
+public class EditorVideo extends Funcionario{
 	
 	private int senha;
 	
