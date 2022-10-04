@@ -1,7 +1,7 @@
 // Gerente é um funcionário, Gerente herda a classe Funcionario
 public class Gerente extends Funcionario{
 	
-	private int senha = 0;
+	private int senha;
 	
 	public void setSenha(int senha) {
 		this.senha = senha;
@@ -15,7 +15,8 @@ public class Gerente extends Funcionario{
 		}
 	}
 		
-	/*public double getBonificacao() {`
+	public double getBonificacao() {
 		return this.salario;
-	}*/
+		
+	}
 }
