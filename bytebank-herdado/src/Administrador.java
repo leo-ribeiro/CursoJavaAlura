@@ -1,11 +1,10 @@
 
-// Gerente é um funcionário, Gerente herda a classe Funcionario
-public class Gerente extends implements Autenticavel {
-	
-	private int senha;
-	
-	public double getBonificacao(){
-        // implementação da bonificação do gerente omitida
+public class Administrador extends Funcionario implements Autenticavel {
+
+    private int senha;
+
+    public double getBonificacao(){
+        // implementação da bonificação do administrador omitida
     }
 
     @Override
@@ -22,4 +21,5 @@ public class Gerente extends implements Autenticavel {
             return false;
         }
     }
+
 }
