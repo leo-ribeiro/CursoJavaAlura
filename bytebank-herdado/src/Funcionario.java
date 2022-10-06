@@ -1,4 +1,5 @@
 
+// Não pode instaciar dessa classe, pq é abstrata.
 public abstract class Funcionario {
 	
 	private String nome;
@@ -6,9 +7,8 @@ public abstract class Funcionario {
 	private double salario;
 	// protected double salario; => Protected significa público para os filhos, para os outros privado.
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	// Método sem corpo, não há implementação desse método.
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;

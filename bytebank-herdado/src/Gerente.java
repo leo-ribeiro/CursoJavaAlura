@@ -1,3 +1,4 @@
+
 // Gerente é um funcionário, Gerente herda a classe Funcionario
 public class Gerente extends Funcionario{
 	
@@ -17,7 +18,7 @@ public class Gerente extends Funcionario{
 		
 	public double getBonificacao() { // Isso significa reescrita, pois temos o mesmo método na classe mãe (Funcionario).
 		System.out.println("Chamando o método de bonificação do GERENTE");
-		return super.getBonificacao() + super.getSalario();
+		return super.getSalario();
 		
 		//return super.getBonificacao() + super.salario; =>  Super significa que esse atributo não está definida nesta classe, e sim na classe mãe (Funcionario).
 		

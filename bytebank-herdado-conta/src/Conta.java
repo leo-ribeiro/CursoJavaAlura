@@ -1,12 +1,14 @@
- public class Conta {
+ public abstract class Conta {
 
-	private double saldo;
+	 // Atributos da classe Conta
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
 	private static int total = 0; 
 	
 	
+	// Contrutores da classe Conta
 	public Conta (int agencia, int numero) {
 		Conta.total++;
 		// System.out.println("O total de contas é " + Conta.total);		
@@ -16,9 +18,8 @@
 		// System.out.println("Estou criando uma conta " + this.numero);
 	}
 	
-	public void deposita(double valor) {
-		this.saldo = this.saldo + valor;	
-	}
+	// Métodos concretos
+	public abstract void deposita(double valor);
 	
 	public boolean saca(double valor) {
 		if(this.saldo >= valor) {   
