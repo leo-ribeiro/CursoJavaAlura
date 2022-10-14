@@ -20,4 +20,14 @@ public class ContaCorrente implements Tributavel{
     public double getValorImposto(){
         return super.saldo * 0.01;
     }
+
+	public char[] getMessage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public char[] getSaldo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

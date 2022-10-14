@@ -70,6 +70,8 @@
 	public static int getTotal() {
 		return Conta.total;
 	}
+
+	protected abstract char[] getMessage();
 }
 
 
