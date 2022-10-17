@@ -1,4 +1,6 @@
- public abstract class Conta {
+package modelo; 
+
+public abstract class Conta {
 
 	 // Atributos da classe Conta
 	protected double saldo;
