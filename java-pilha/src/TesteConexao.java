@@ -5,12 +5,12 @@ public class TesteConexao {
 		
 		Conexao con = null;
 		try {
-			Conexao con = new Conexao();
+			con = new Conexao();
 			con.leDados();
+		} catch(IllegalStateException ex) {
+			System.out.println("Deu erro na conexão");			
+		} finally {
 			con.fecha();
-		} catch (IllegalStateException ex) {
-			System.out.println("Deu erro na conexão");
-			con.fecha();			
 		}
 
 	}
