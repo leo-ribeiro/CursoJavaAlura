@@ -17,4 +17,9 @@ public class Gerente implements Autenticavel{
     public boolean autentica(int senha){
         return this.autenticador.autentica(senha);
     }
+
+	public void setNome(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 }
